@@ -23,77 +23,114 @@ export default function ReglerPage() {
         </h1>
 
         <p className="text-center text-white/60 mt-4">
-          Offisielt regelverk for EXIT RP – 16+
+          Gjeldende regler for Exit Rollespill – bindende for alle spillere
         </p>
 
-        {/* Content */}
         <div className="mt-14 space-y-10">
-          <section className="rounded-3xl border border-white/10 bg-white/5 p-8 md:p-10 backdrop-blur-xl">
-            <h2 className="text-2xl font-semibold text-blue-400">Innledning</h2>
-            <p className="mt-4 text-white/70 leading-relaxed">
-              Den viktigste regelen på EXIT RP er sunn fornuft. Vi forventer moden
-              spillestil og realistisk rollespill. Staff har alltid siste ord ved
-              tolkning av regler.
+          {/* Intro */}
+          <section className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl">
+            <h2 className="text-2xl font-semibold text-blue-400">
+              Generelle regler for rollespill
+            </h2>
+            <ul className="mt-5 space-y-2 text-white/70 list-disc pl-5">
+              <li><b>Metagaming:</b> Bruk av UAK-info i RP er forbudt.</li>
+              <li><b>Powergaming:</b> Urealistiske handlinger uten motspill.</li>
+              <li><b>Powerfarming:</b> Utnyttelse av systemer for rask gevinst.</li>
+              <li><b>RDM:</b> Skade/drap uten RP-grunn.</li>
+              <li><b>VDM:</b> Kjøretøy som våpen er forbudt.</li>
+              <li><b>Greenzone:</b> Ingen krim på sykehus, politi, spawn.</li>
+              <li><b>Combat logging:</b> Forbudt å logge ut i scenario.</li>
+              <li><b>ERP:</b> Erotiske rollespill er ikke tillatt.</li>
+              <li><b>Value of Life:</b> Verdsett liv realistisk.</li>
+              <li><b>NLR:</b> Mister minne fra siste 15 min ved alvorlig skade.</li>
+            </ul>
+          </section>
+
+          {/* Gjeng */}
+          <section className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl">
+            <h2 className="text-2xl font-semibold text-blue-400">Gjengregler</h2>
+            <p className="text-white/70 mt-3">
+              Maks 11 medlemmer i aktive konflikter.
             </p>
           </section>
 
-          <section className="rounded-3xl border border-white/10 bg-white/5 p-8 md:p-10 backdrop-blur-xl">
-            <h2 className="text-2xl font-semibold text-blue-400">Grunnleggende regler</h2>
+          {/* Grunnregler */}
+          <section className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl">
+            <h2 className="text-2xl font-semibold text-blue-400">
+              Grunnleggende regler
+            </h2>
             <ul className="mt-5 space-y-2 text-white/70 list-disc pl-5">
-              <li>16 års aldersgrense (ingen unntak)</li>
-              <li>Fungerende mikrofon er påkrevd</li>
-              <li>Hold deg i karakter til enhver tid</li>
-              <li>Vis respekt IK og UAK</li>
-              <li>Twitch TOS skal følges</li>
-              <li>Ikke spill på selvmord, overgrep eller alvorlig sykdom</li>
-              <li>RP er samarbeid – spill fair</li>
+              <li>FailRP er ikke tillatt</li>
+              <li>Planlagte regelbrudd krever staff-godkjenning</li>
+              <li>Bugs og glitches skal rapporteres</li>
+              <li>Cheats/modifikasjoner er forbudt</li>
+              <li>Misbruk av multikarakter er forbudt</li>
+              <li>Streamere må skjule viktige lokasjoner</li>
             </ul>
           </section>
 
-          <section className="rounded-3xl border border-white/10 bg-white/5 p-8 md:p-10 backdrop-blur-xl">
-            <h2 className="text-2xl font-semibold text-blue-400">Krav til karakter</h2>
+          {/* Krim */}
+          <section className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl">
+            <h2 className="text-2xl font-semibold text-blue-400">
+              Kriminelle regler
+            </h2>
             <ul className="mt-5 space-y-2 text-white/70 list-disc pl-5">
-              <li>Realistisk navn (ingen kjendiser/ordspill)</li>
-              <li>Karakter må være 16+</li>
-              <li>Ingen hybridkarakterer</li>
-              <li>Karakterutvikling skal være troverdig</li>
+              <li>Begrensninger på ran og gisler</li>
+              <li>Maksbeløp ved spiller-ran</li>
+              <li>Ingen tvang til å hente eiendeler</li>
+              <li>Vipps-ran er forbudt</li>
+              <li>Perming krever godkjenning</li>
+              <li>Forceperming er forbudt</li>
             </ul>
           </section>
 
-          <section className="rounded-3xl border border-white/10 bg-white/5 p-8 md:p-10 backdrop-blur-xl">
-            <h2 className="text-2xl font-semibold text-blue-400">RP-regler</h2>
+          {/* Karakter */}
+          <section className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl">
+            <h2 className="text-2xl font-semibold text-blue-400">
+              Karakterregler
+            </h2>
             <ul className="mt-5 space-y-2 text-white/70 list-disc pl-5">
-              <li>Ingen RDM/VDM</li>
-              <li>Ingen metagaming</li>
-              <li>Ingen powergaming</li>
-              <li>Combat logging er forbudt</li>
-              <li>Bug-misbruk gir straff</li>
+              <li>Realistiske navn</li>
+              <li>Eiendeler overføres ikke ved død</li>
+              <li>Perming kan velges innenfor regler</li>
             </ul>
           </section>
 
-          <section className="rounded-3xl border border-white/10 bg-white/5 p-8 md:p-10 backdrop-blur-xl">
-            <h2 className="text-2xl font-semibold text-blue-400">New Life Rule</h2>
-            <p className="mt-4 text-white/70 leading-relaxed">
-              Ved død husker du lite av hendelsen. Du kan ikke returnere til scenario
-              før 1 time.
-            </p>
+          {/* Ventetid */}
+          <section className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl">
+            <h2 className="text-2xl font-semibold text-blue-400">
+              Ventetid på ran
+            </h2>
+            <ul className="mt-5 space-y-2 text-white/70 list-disc pl-5">
+              <li>Storbank – 42t</li>
+              <li>Juvel – 32t</li>
+              <li>Bank – 10t</li>
+              <li>Butikk – 5t</li>
+              <li>Husran – 2t</li>
+              <li>ATM – 30 min</li>
+            </ul>
           </section>
 
-          <section className="rounded-3xl border border-white/10 bg-white/5 p-8 md:p-10 backdrop-blur-xl">
-            <h2 className="text-2xl font-semibold text-blue-400">Kriminelle handlinger</h2>
+          {/* Jobb */}
+          <section className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl">
+            <h2 className="text-2xl font-semibold text-blue-400">
+              Jobbregler
+            </h2>
             <ul className="mt-5 space-y-2 text-white/70 list-disc pl-5">
-              <li>Maks 8 personer per krim-handling</li>
-              <li>Frivillige gisler er ikke lov</li>
-              <li>Motorsykkel ved ran er ikke lov</li>
-              <li>Pocketwipe er forbudt</li>
-              <li>Looting skal skje med skjønn</li>
+              <li>Ran av nødetater er forbudt</li>
+              <li>Fakturaer skal være realistiske</li>
+              <li>Salg av bedrifter krever søknad</li>
+              <li>Ingen kriminalitet på vakt</li>
+              <li>Jobbkasse kan ikke misbrukes</li>
             </ul>
           </section>
         </div>
 
         <footer className="mt-20 text-center text-white/40 space-y-2">
           <p>© {new Date().getFullYear()} EXIT RP</p>
-          <p className="text-white/30 text-sm">Nettside laget av Fossland WebHost</p>
+          <p className="text-white/30 text-sm">
+            Nettside laget av Fossland WebHost
+          </p>
         </footer>
       </div>
     </main>
