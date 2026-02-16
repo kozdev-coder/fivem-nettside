@@ -2,21 +2,26 @@ export const runtime = "nodejs";
 
 export async function GET() {
   try {
-    // HER setter du server IP senere
-    const res = await fetch("http://DIN-IP:30120/info.json");
+    const joinCode = "vg59ee";
+
+    const res = await fetch(
+      "https://servers-frontend.fivem.net/api/servers/single/" + joinCode,
+      { cache: "no-store" }
+    );
 
     if (!res.ok) {
       return Response.json({ online: false });
     }
 
-    const data = await res.json();
+    const json = await res.json();
+    const data = json.Data;
 
     return Response.json({
       online: true,
-      players: data.players || 0,
-      maxPlayers: data.sv_maxclients || 64,
+      players: data.clients ?? 0,
+      maxPlayers: data.sv_maxclients ?? 64,
     });
-  } catch {
+  } catch (err) {
     return Response.json({ online: false });
   }
 }

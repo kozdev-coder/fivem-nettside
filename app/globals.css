@@ -27,3 +27,41 @@ body {
 html {
   scroll-behavior: smooth;
 }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-out;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: fadeUp 1s ease-out;
+}
+
+.glow-blue {
+  box-shadow: 0 0 40px rgba(59,130,246,0.35);
+}
+@keyframes loading {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+.animate-loading {
+  animation: loading 6s linear forwards;
+}
