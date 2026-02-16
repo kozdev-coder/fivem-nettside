@@ -12,7 +12,7 @@ export default function Home() {
       <div className="relative mx-auto max-w-6xl px-6 py-20">
         <header className="flex items-center justify-between">
           <div className="text-sm tracking-widest text-white/70">
-            MIDNIGHT RP
+            EXIT RP
           </div>
 
           <a
@@ -66,7 +66,7 @@ export default function Home() {
         </section>
 
         <footer className="mt-14 text-center text-white/50 text-sm">
-          © {new Date().getFullYear()} Midnight RP
+          © {new Date().getFullYear()} EXIT RP
         </footer>
       </div>
     </main>

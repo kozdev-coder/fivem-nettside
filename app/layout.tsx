@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Midnight RP – Norsk FiveM Server",
+  title: "EXIT RP – Norsk FiveM Server",
   description: "Seriøs norsk FiveM RP-server med whitelist",
 };
 
